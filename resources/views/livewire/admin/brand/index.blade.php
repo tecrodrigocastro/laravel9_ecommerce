@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Lista de Marcas
-                        <a href="#" class="btn btn-primary btn-sm float-end" data-bs-toggle="modal"
+                        <a href="#" class="btn btn-success btn-sm float-end" data-bs-toggle="modal"
                             data-bs-target="#addBrandModal">Adicionar Marca</a>
                     </h4>
                 </div>

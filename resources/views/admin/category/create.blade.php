@@ -6,8 +6,8 @@
             <div class="card">
                 <div class="card-header">
                     <h3> Adicionar Categoria
-                        <a href="{{ url('admin/category/create') }}"
-                            class="btn btn-primary btn-sm text-white float-end">VOLTAR</a>
+                        <a href="{{ url('admin/category') }}"
+                            class="btn btn-warning btn-sm text-white float-end">VOLTAR</a>
                     </h3>
                 </div>
                 <div class="card-body">
@@ -54,7 +54,7 @@
                                 <textarea rows="3" name="meta_description" class="form-control"></textarea>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <button type="submit" class="btn btn-primary float-end">Salvar</button>
+                                <button type="submit" class="btn btn-success float-end">Salvar</button>
                             </div>
                         </div>
                     </form>

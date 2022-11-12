@@ -37,7 +37,7 @@
                     <div class="modal-footer">
                         <button type="button" wire:click="closeModal" class="btn btn-secondary"
                             data-bs-dismiss="modal">Fechar</button>
-                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <button type="submit" class="btn btn-success">Salvar</button>
                     </div>
                 </form>
             </div>
