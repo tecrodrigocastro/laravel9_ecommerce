@@ -1,27 +1,32 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Ecommerce Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel 9 Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o backend. Também estamos usando o pacote Livewire nesta versão do Laravel 9. Possui diferentes recursos para o usuário como um usuário pode visualizar todas as categorias, visualizar todos os produtos em uma categoria específica, filtrar os produtos por marca e preço, selecionar um produto e selecionar a quantidade e selecionar a cor e adicionar o produto ao carrinho. O usuário pode adicionar vários produtos no carrinho e na lista de desejos. Existem métodos de pagamento na página de checkout, como PayPal e COD.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Ecommerce possui vários recursos listados abaixo:
 
-## Learning Laravel
+- Login and Register.
+- View all Categories.
+- View all Products under specific categories.
+- Filter all Products by Brands and Price.
+- View a single product with an image and its details.
+- Select a color for the specific product before adding it to the cart. 
+- Product quantity increment/decrement before adding it to the cart.
+- Add to Cart.
+- Add to Wishlist.
+- Display Cart Items.
+- Display Wishlist Items.
+- Checkout Page.
+- Checkout Form validation before placing the order.
+- Checkout Payments like - Online Paypal and COD.
+- Mail Notification - User gets a Mail Notification once the order is placed. 
+- User can view orders.
+- User can view each order and its details (like - order status, etc)
+- User Profile
+- Change Password option
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
