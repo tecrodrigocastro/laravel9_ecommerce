@@ -15,6 +15,45 @@
                 </div>
                 <div class="card-body">
 
+                    <table class=" table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Categoria</th>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Status</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($products as $product)
+                                <tr>
+                                    <td>{{ $product->id }}</td>
+                                    @if ($product->category)
+                                        <td>{{ $product->category->name }}</td>
+                                    @else
+                                        Sem Categoria
+                                    @endif
+                                    <td>{{ $product->name }}</td>
+                                    <td>{{ $product->selling_price }}</td>
+                                    <td>{{ $product->quantity }}</td>
+                                    <td>{{ $product->status == '1' ? 'Escondido' : 'Visivel' }}</td>
+                                    <td>
+                                        <a href="{{ url('admin/products/' . $product->id . '/edit') }}"
+                                            class="btn btn-primary">Editar</a>
+                                        <a href="" class="btn btn-danger">Editar</a>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="7">Nenhum Produto Encontrado</td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
