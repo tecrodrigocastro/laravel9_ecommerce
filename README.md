@@ -3,11 +3,12 @@
 
 ## Ecommerce Laravel
 
-Laravel 9 Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o backend. Também estamos usando o pacote Livewire nesta versão do Laravel 9. Possui diferentes recursos para o usuário como um usuário pode visualizar todas as categorias, visualizar todos os produtos em uma categoria específica, filtrar os produtos por marca e preço, selecionar um produto e selecionar a quantidade e selecionar a cor e adicionar o produto ao carrinho. O usuário pode adicionar vários produtos no carrinho e na lista de desejos. Existem métodos de pagamento na página de checkout, como PayPal e COD.
+Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o backend. Também estamos usando o pacote Livewire nesta versão do Laravel 9. Possui diferentes recursos para o usuário como um usuário pode visualizar todas as categorias, visualizar todos os produtos em uma categoria específica, filtrar os produtos por marca e preço, selecionar um produto e selecionar a quantidade e selecionar a cor e adicionar o produto ao carrinho. O usuário pode adicionar vários produtos no carrinho e na lista de desejos. Existem métodos de pagamento na página de checkout, como PayPal e COD.
 
 
 ## Ecommerce possui vários recursos listados abaixo:
-
+Customer Side:
+____________________________________________________
 - Login and Register.
 - View all Categories.
 - View all Products under specific categories.
@@ -17,6 +18,31 @@ Laravel 9 Ecommerce é construído na versão laravel 9 e banco de dados MySQL p
 - Product quantity increment/decrement before adding it to the cart.
 - Add to Cart.
 - Add to Wishlist.
+- Display Cart Items.
+- Display Wishlist Items.
+- Checkout Page.
+- Checkout Form validation before placing the order.
+- Checkout Payments like - Online Paypal and COD.
+- Mail Notification - User gets a Mail Notification once the order is placed. 
+- User can view orders.
+- User can view each order and its details (like - order status, etc)
+- User Profile
+- Change Password option
+
+Admin Side:
+____________________________________________________
+- Category CRUD
+- Product CRUD
+    - 1  Add, Edit, Update, Delete Products.  
+    - 2  Can add multiple images for the product.  
+    - 3  Can add multiple colors for the product.   
+- Brand CRUD - these brands are linked with products
+- Color CRUD - these colors are linked with products
+- Slider CRUD
+- Site Setting (Website Setting) 
+- User Management CRUD with Role
+- Order Management
+- All Statistics on Dashboard
 - Display Cart Items.
 - Display Wishlist Items.
 - Checkout Page.
