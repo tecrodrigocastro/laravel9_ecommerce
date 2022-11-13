@@ -40,57 +40,40 @@ ____________________________________________________
 - Color CRUD - these colors are linked with products
 - Slider CRUD
 - Site Setting (Website Setting) 
+    - 1  Basic website details.  
+    - 2  Social Media links which will be shown in frontend at footer area.  
+    - 3  Contact/Office Information links which will be shown in frontend at footer area.  
 - User Management CRUD with Role
 - Order Management
+    - 1  View All Orders List.  
+    - 2  Filter orders by date and order-status.  
+    - 3  View each order with user & order details.
+    - 4  Invoice - View each order invoice.  
+    - 5  Invoice - Download each order invoice as PDF.  
+    - 6  Invoice - Mail each order Invoice. 
+    - 7  Order- Status - Update your order status (Eg. In-Porgress, Completed, Pending, Cancelled, etc). 
 - All Statistics on Dashboard
-- Display Cart Items.
-- Display Wishlist Items.
-- Checkout Page.
-- Checkout Form validation before placing the order.
-- Checkout Payments like - Online Paypal and COD.
-- Mail Notification - User gets a Mail Notification once the order is placed. 
-- User can view orders.
-- User can view each order and its details (like - order status, etc)
-- User Profile
-- Change Password option
+    - 1  Total Orders, Today Orders, this month order, this year order.   
+    - 2  Products, Users, etc. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Requisitos para rodar o projeto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Host : Localhost(Xampp)
+- Composer
+- PHP Version : 8.1 ou Superior
+- Database : MySQL DB 
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Instruções
 
-### Premium Partners
+- **Extract the downloaded .zip file.**
+- **Run the following command : "composer install" - to install the required packages.**
+- **Setup Database in .env file.**
+- **You will find a .sql file (DB) inside the public folder containing all the data shown in the video. You can import this .sql file in your database (if you are importing the .sql file, you can skip step 5). If you want a fresh database, you can skip Step 4.**
+- **Run the migrate command: "php artisan migrate".**
+- **The project is ready to run. Run the command: "php artisan serve" and you have your project running.**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
