@@ -31,13 +31,13 @@ ____________________________________________________
 
 Lado do administrador:
 ____________________________________________________
-- Categoria CRUD (FEITO)
-- Produto CRUD (FEITO)
-    - 1  Adicionar, editar, atualizar, excluir produtos.   (FEITO)
-    - 2  Pode adicionar várias imagens para o produto. (FEITO)
-    - 3  Pode adicionar várias cores para o produto.   (FEITO)
-- Marca CRUD - estas marcas estão ligadas a produtos. (FEITO)
-- Cor CRUD - estas cores estão ligadas a produtos. (FEITO)
+- Categoria CRUD **(FEITO)**
+- Produto CRUD **(FEITO)**
+    - 1  Adicionar, editar, atualizar, excluir produtos.   **(FEITO)**
+    - 2  Pode adicionar várias imagens para o produto. **(FEITO)**
+    - 3  Pode adicionar várias cores para o produto.   **(FEITO)**
+- Marca CRUD - estas marcas estão ligadas a produtos. **(FEITO)**
+- Cor CRUD - estas cores estão ligadas a produtos. **(FEITO)**
 - Slider CRUD
 - Configuração do Site (Configuração do Site)
     - 1  Detalhes básicos do site.  
