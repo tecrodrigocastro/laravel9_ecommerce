@@ -7,7 +7,9 @@ use App\Http\Requests\ProductFormRequest;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\ProductImage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -111,8 +113,45 @@ class ProductController extends Controller
                     ]);
                 }
             }
+            return redirect('admin/products')->with('message', 'Produto Atualizado com Sucesso');
         } else {
             return redirect('admin/products')->with('message', 'ID de produto não encontrado');
         }
+    }
+
+    public function destroyImage(int $product_image_id)
+    {
+        $productImage = ProductImage::findOrFail($product_image_id);
+
+        if (File::exists($productImage->image)) {
+            File::delete($productImage->image);
+        }
+
+        $productImage->delete();
+        return redirect()->back()->with('message', 'Imagem Deletada com sucesso');
+    }
+
+
+    public function destroy(int $product_id)
+    {
+        $product = Product::findOrFail($product_id);
+        if ($product->productImages) {
+            foreach ($product->productImages as $image) {
+                if (File::exists($image->image)) {
+                    File::delete($image->image);
+                }
+            }
+        }
+
+        $product->delete();
+        return redirect()->back()->with('message', 'Produto Deletado com sucesso');
+    }
+
+
+
+    public function getProducts()
+    {
+        $products = Product::get();
+        return response($products, 200);
     }
 }

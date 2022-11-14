@@ -3,6 +3,9 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
+            @if (session('message'))
+                <h5 class="alert alert-success mb-2"> {{ session('message') }}</h5>
+            @endif
             <div class="card">
                 <div class="card-header">
                     <h3> Editar Produto
@@ -10,6 +13,7 @@
                     </h3>
                 </div>
                 <div class="card-body">
+
                     @if ($errors->any())
                         <div class="alert alert-warning">
                             @foreach ($errors->all() as $error)
@@ -153,10 +157,17 @@
                                 </div>
                                 <div>
                                     @if ($product->productImages)
-                                        @foreach ($product->productImages as $image)
-                                            <img src="{{ asset($image->image) }}" style="width: 80px; height: 80px;"
-                                                alt="Img" class="me-4 border">
-                                        @endforeach
+                                        <div class="row">
+                                            @foreach ($product->productImages as $image)
+                                                <div class="col-md-2">
+                                                    <img src="{{ asset($image->image) }}"
+                                                        style="width: 80px; height: 80px;" alt="Img"
+                                                        class="me-4 border">
+                                                    <a href="{{ url('admin/product-image/' . $image->id . '/delete') }}"
+                                                        class="d-block">Remover</a>
+                                                </div>
+                                            @endforeach
+                                        </div>
                                     @else
                                         <h5>Nenhuma imagem adicionada</h5>
                                     @endif

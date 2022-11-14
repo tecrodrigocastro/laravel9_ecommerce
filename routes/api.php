@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::controller(App\Http\Controllers\Admin\ProductController::class, 'index')->group(function () {
+    Route::get('/products', 'getProducts');
+
+});

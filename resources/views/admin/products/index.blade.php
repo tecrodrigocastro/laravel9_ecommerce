@@ -43,7 +43,9 @@
                                     <td>
                                         <a href="{{ url('admin/products/' . $product->id . '/edit') }}"
                                             class="btn btn-primary">Editar</a>
-                                        <a href="" class="btn btn-danger">Editar</a>
+                                        <a href="{{ url('admin/products/' . $product->id . '/delete') }}"
+                                            onclick="return confirm('Tem certeza de que deseja excluir esses dados?')"
+                                            class="btn btn-danger">Deletar</a>
                                     </td>
                                 </tr>
                             @empty
