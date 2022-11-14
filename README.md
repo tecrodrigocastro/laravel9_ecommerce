@@ -9,7 +9,7 @@ Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o back
 ## Ecommerce possui vários recursos listados abaixo:
 Lado do cliente::
 ____________________________________________________
-- Login e Registro.
+- Login e Registro. (FEITO)
 - Ver todas as categorias.
 - Ver todos os produtos em categorias específicas.
 - Filtrar todos os Produtos por Marcas e Preço.
@@ -31,13 +31,13 @@ ____________________________________________________
 
 Lado do administrador:
 ____________________________________________________
-- Categoria CRUD
-- Produto CRUD
-    - 1  Adicionar, editar, atualizar, excluir produtos.  
-    - 2  Pode adicionar várias imagens para o produto. 
-    - 3  Pode adicionar várias cores para o produto.   
-- Marca CRUD - estas marcas estão ligadas a produtos
-- Cor CRUD - estas cores estão ligadas a produtos
+- Categoria CRUD (FEITO)
+- Produto CRUD (FEITO)
+    - 1  Adicionar, editar, atualizar, excluir produtos.   (FEITO)
+    - 2  Pode adicionar várias imagens para o produto. (FEITO)
+    - 3  Pode adicionar várias cores para o produto.   (FEITO)
+- Marca CRUD - estas marcas estão ligadas a produtos. (FEITO)
+- Cor CRUD - estas cores estão ligadas a produtos. (FEITO)
 - Slider CRUD
 - Configuração do Site (Configuração do Site)
     - 1  Detalhes básicos do site.  
