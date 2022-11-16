@@ -26,8 +26,8 @@ ____________________________________________________
 - Notificação por e-mail - O usuário recebe uma notificação por e-mail assim que o pedido é feito. 
 - O usuário pode visualizar os pedidos.
 - O usuário pode visualizar cada pedido e seus detalhes (como - status do pedido, etc.)
-- Perfil de usuário
-- Opção Alterar Senha
+- Perfil de usuário.
+- Opção Alterar Senha.
 
 Lado do administrador:
 ____________________________________________________
