@@ -3,10 +3,10 @@
 
 ## Ecommerce Laravel 9
 
-Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o backend. Também usando o pacote Livewire nesta versão do Laravel 9. Possui diferentes recursos para o usuário como um usuário pode visualizar todas as categorias, visualizar todos os produtos em uma categoria específica, filtrar os produtos por marca e preço, selecionar um produto e selecionar a quantidade e selecionar a cor e adicionar o produto ao carrinho. O usuário pode adicionar vários produtos no carrinho e na lista de desejos. Existem métodos de pagamento na página de checkout, como PayPal e COD.
+Esse projeto de Ecommerce é construído na versão laravel 9 e banco de dados MySQL para o backend. Também vou usar o pacote Livewire. Possui diferentes recursos para o usuário como um usuário pode visualizar todas as categorias, visualizar todos os produtos em uma categoria específica, filtrar os produtos por marca e preço, selecionar um produto e selecionar a quantidade e selecionar a cor e adicionar o produto ao carrinho. O usuário pode adicionar vários produtos no carrinho e na lista de desejos. Existem métodos de pagamento na página de checkout, como PayPal e COD.
 
 
-## Ecommerce possui vários recursos listados abaixo:
+## Ecommerce vai possuir vários recursos listados abaixo:
 Lado do cliente::
 ____________________________________________________
 - Login e Registro. (FEITO)
