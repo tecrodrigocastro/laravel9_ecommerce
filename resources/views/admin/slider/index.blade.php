@@ -36,8 +36,11 @@
                                     </td>
                                     <td>{{ $slider->status == '0' ? 'Visivel' : 'Escondido' }}</td>
                                     <td>
-                                        <a href="" class="btn btn-primary">Editar</a>
-                                        <a href="" class="btn btn-danger">Deletar</a>
+                                        <a href="{{ url('admin/sliders/' . $slider->id . '/edit') }}"
+                                            class="btn btn-primary">Editar</a>
+                                        <a href="{{ url('admin/sliders/' . $slider->id . '/delete') }}"
+                                            onclick="return confirm('Tem certeza de que deseja excluir esses dados?');"
+                                            class="btn btn-danger">Deletar</a>
                                     </td>
                                 </tr>
                             @endforeach

@@ -65,5 +65,8 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
         Route::get('sliders', 'index');
         Route::get('sliders/create', 'create');
         Route::post('sliders/create', 'store');
+        Route::get('sliders/{slider}/edit', 'edit');
+        Route::put('sliders/{sliders}', 'update');
+        Route::get('sliders/{sliders}/delete', 'destroy');
     });
 });

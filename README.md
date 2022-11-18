@@ -38,7 +38,7 @@ ____________________________________________________
     - 3  Pode adicionar várias cores para o produto.   **(FEITO)**
 - Marca CRUD - estas marcas estão ligadas a produtos. **(FEITO)**
 - Cor CRUD - estas cores estão ligadas a produtos. **(FEITO)**
-- Slider CRUD
+- Slider CRUD. **(FEITO)**
 - Configuração do Site (Configuração do Site)
     - 1  Detalhes básicos do site.  
     - 2  Links de mídia social que serão mostrados no frontend na área de rodapé.  
