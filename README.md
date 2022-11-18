@@ -9,8 +9,8 @@ Esse projeto de Ecommerce é construído na versão laravel 9 e banco de dados M
 ## Ecommerce vai possuir vários recursos listados abaixo:
 Lado do cliente::
 ____________________________________________________
-- Login e Registro. (FEITO)
-- Ver todas as categorias.
+- Login e Registro. **(FEITO)**
+- Ver todas as categorias. **(FEITO)**
 - Ver todos os produtos em categorias específicas.
 - Filtrar todos os Produtos por Marcas e Preço.
 - Visualizar um único produto com uma imagem e seus detalhes.
