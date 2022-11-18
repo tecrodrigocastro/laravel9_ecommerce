@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
+
+Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
@@ -66,7 +68,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
         Route::get('sliders/create', 'create');
         Route::post('sliders/create', 'store');
         Route::get('sliders/{slider}/edit', 'edit');
-        Route::put('sliders/{sliders}', 'update');
-        Route::get('sliders/{sliders}/delete', 'destroy');
+        Route::put('sliders/{slider}', 'update');
+        Route::get('sliders/{slider}/delete', 'destroy');
     });
 });
