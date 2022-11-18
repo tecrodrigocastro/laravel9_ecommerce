@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <h4 class="mb-4">Todas as Categorias</h4>
                 </div>
-                @foreach ($categories as $category)
+                @forelse ($categories as $category)
                     <div class="col-6 col-md-3">
                         <div class="category-card">
                             <a href="{{ url('/collections/' . $category->slug) }}">
@@ -22,7 +22,11 @@
                             </a>
                         </div>
                     </div>
-                @endforeach
+                @empty
+                    <div class="col-md-12">
+                        <h5>Nenhuma Categoria encontrada</h5>
+                    </div>
+                @endforelse
 
             </div>
         </div>
