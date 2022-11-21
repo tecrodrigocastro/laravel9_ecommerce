@@ -11,7 +11,7 @@ Lado do cliente::
 ____________________________________________________
 - Login e Registro. **(FEITO)**
 - Ver todas as categorias. **(FEITO)**
-- Ver todos os produtos em categorias específicas.
+- Ver todos os produtos em categorias específicas. **(FEITO)**
 - Filtrar todos os Produtos por Marcas e Preço.
 - Visualizar um único produto com uma imagem e seus detalhes.
 - Selecione uma cor para o produto específico antes de adicioná-lo ao carrinho. 
