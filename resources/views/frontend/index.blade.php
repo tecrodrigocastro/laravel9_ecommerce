@@ -17,7 +17,7 @@
                             <h1>{!! $sliderItem->title !!}</h1>
                             <p>{!! $sliderItem->description !!}</p>
                             <div>
-                                <a href="#" class="btn btn-slider">Get Now</a>
+                                <a href="#" class="btn btn-slider">Obter agora</a>
                             </div>
                         </div>
 
