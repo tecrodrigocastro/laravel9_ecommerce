@@ -52,9 +52,10 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
         Route::get('product-color/{prod_color_id}/delete', 'deleteProdColor');
     });
 
+    //BRANDS
     Route::get('/brands', App\Http\Livewire\Admin\Brand\Index::class);
 
-    //BRANDS
+    //COLORS
     Route::controller(App\Http\Controllers\Admin\ColorController::class, 'index')->group(function () {
         Route::get('/colors', 'index');
         Route::get('/colors/create', 'create');

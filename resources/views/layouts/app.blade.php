@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title> @yield('title')</title>
-
+    <meta name="description" content="@yield('meta_description')">
+    <meta name="keyword" content="@yield('meta_keyword')">
 
 
     <!-- Fonts -->
@@ -21,11 +23,12 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     @livewireStyles
 </head>
+
 <body>
     <div id="app">
 
         @include('layouts.inc.frontend.navbar')
-         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     RED Ecom
@@ -84,9 +87,10 @@
         </main>
     </div>
 
-        <!-- Scripts -->
-        <script src="{{ asset('assets/js/jquery-3.6.0.js') }}" defer></script>
-        <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" defer></script>
-        @livewireStyles
+    <!-- Scripts -->
+    <script src="{{ asset('assets/js/jquery-3.6.0.js') }}" defer></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" defer></script>
+    @livewireStyles
 </body>
+
 </html>
