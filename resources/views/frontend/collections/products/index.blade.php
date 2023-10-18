@@ -18,7 +18,7 @@
                     <h4 class="mb-4">Produtos da categoria {{ $category->name }}</h4>
                 </div>
 
-                <livewire:frontend.product.index :products="$products" :category="$category" />
+                <livewire:frontend.product.index :category="$category" />
 
             </div>
         </div>

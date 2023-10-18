@@ -68,6 +68,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     //SLIDERS
     Route::controller(App\Http\Controllers\Admin\SliderController::class, 'index')->group(function () {
         Route::get('sliders', 'index');
+        Route::get('sliders', 'teste');
         Route::get('sliders/create', 'create');
         Route::post('sliders/create', 'store');
         Route::get('sliders/{slider}/edit', 'edit');
